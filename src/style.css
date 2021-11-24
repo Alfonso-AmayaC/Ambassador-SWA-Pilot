@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     margin: 1% 5%;
+    
     background-color:E6F7FF;
 }
 
@@ -20,6 +21,7 @@ main {
     padding: .0em .5em .1em .5em;
     margin-bottom: .5em;
     margin-top: .3em;
+    min-width: 90%;
 }
 
 h1 {
@@ -44,4 +46,35 @@ ul {
     margin: 0em 0em .3em 0em;
     list-style-type: square;
     padding-left: 1.4em;
+}
+
+div>a{
+    font-size: normal;
+}
+
+@media only screen and (max-width:780px) {
+    main{
+        grid-template-columns: 100%;
+    }
+    div>a{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:378px) and (max-width:430px) {
+    div>a{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width:375px) and (max-width:378px) {
+    div>a{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    div>a{
+        font-size: 13.5px;
+    }
 }
